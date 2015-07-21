@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get '/' => 'tournaments#index'
-
   get '/api/tournaments' => 'tournaments#display'
+
+  post '/api/tournaments' => 'tournaments#create'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
